@@ -3,75 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to my Homepage</title>
-    <!-- styling an h1 element -->
- </head>
- <body>
- <style>
-  body{ font: 100% lucida sans, verdana;
-  margin: 0;
-  padding: 0;}
-  header{ background-color: #04AA6D;
-  color: white;
-  padding: 15px;
-  text-align:left;
-border-radius: 5px;
-margin: 0;
+    <title>Document</title>
+</head>
+<body>
+    
+<style>
+#top{background-color: green;
+    color: white;
+    margin: 4px;
+    padding: 15px;
+    border-radius: 5px;
+    *{
+        margin: 0;
+    }
 }
 
-.container {
-  display: flex;
-  margin: 10px;
+ul{ padding: 0;
+    margin: 0;
+ li{
+    list-style: none;
+    background-color: #f1f1f1;
+    margin: 4px;
+padding: 2px;
+border: 1px solid #d4d4d4;
+border-radius: 4px;}
+
+#active{background-color: green;
+color: white;}
 }
 
-.left {
-  width: 15%;
-  padding: 10px;
-}
 
+a{color: black;}
 
-.main {
-  width: 60%;
-  padding: 10px;
-}
+#Side-bar{background-color: #32a4ef;
+color: white;
+padding: 10px;
+border-radius:  4px;}
 
-.right {
-  width: 25%;
-  background-color: #2196F3;
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-  height: fit-content;
-}
+#footer{
+    line-height: 14px;
+    padding: 10px;
+    font-size: 70%;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #d1d1d1;
+    margin: 4px;
+    background-color:#f1f1f1;
+    border-radius: 4px;
+    }
 
-.bottom {
-  clear: both;
-  background-color: #f1f1f1;
-  padding: 15px;
-  text-align: center;
-  font-size: 14px;
-  margin-top: 10px;
-}
 </style>
+    <section id="top">
+        <h1> Welcome To My Homepage</h1>
+        <p>Use the menu to select different Stylesheet</p>
+    </section>
+    
+    
 
-  <header>
-    <h1> Welcome To My Homepage</h1>
-    <p>Use the menu to select different Stylesheet</p>
-  </header>
+    <ul>
+        <li id="active">Stylesheet 1</li>
+        <li>Stylesheet 2</li>
+        <li>Stylesheet 3</li>
+        <li>Stylesheet 4</li>
+        <li>No Stylesheet</li>
+    </ul>
 
    
-    
- <div class="container">
-    
-   <div class="left">
-    <button class="menuitem" onclick="reStyle(0)">Stylesheet 1</button>
-    <button class="menuitem" onclick="reStyle(0)">Stylesheet 2</button>
-    <button class="menuitem" onclick="reStyle(0)">Stylesheet 3</button>
-    <button class="menuitem" onclick="reStyle(0)">Stylesheet 4</button>
-    <button class="menuitem" onclick="reStyle(0)">No Stylesheet </button>
-   </div>
-
-   <div class="main"> 
         <h1>Same Page Different Stylesheets</h1>
         <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. 
            You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:
@@ -84,20 +81,20 @@ margin: 0;
          <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:
             <a href="d">No Stylesheet.</a>
         </p>
-    </div>
-
-
-    <div class="right">
-      <h3>Side-Bar</h3>
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-    </div>
- </div>
-
- <div class ="bottom">
     
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
- </div>
 
 
+    <section id="Side-bar">
+        <h3>Side-Bar</h3>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    </section>
+     
+    <section id="footer">  
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+         Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+         Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, 
+         vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+    </section>
+    
 </body>
 </html>
